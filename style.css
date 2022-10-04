@@ -12,7 +12,7 @@ body {
     
     line-height: 1.618;
 }
-html, body {
+html {
     padding: 0;
     margin: 0;
     font-size: 14px;
@@ -46,7 +46,7 @@ header{
     left: 0;
     width: 100%;
     height: 150px;
-    /* margin-bottom: 20px!important; */
+    margin-bottom: 20px!important;
     
     
 
@@ -59,16 +59,24 @@ header{
 .header-top{
     margin: 0px 80px!important;
     padding: 0!important;
+    display: flex;
+    justify-content: space-between;
 }
 .navbar{
     height: 101px;
     font-size: 14px;
     padding: 0!important;
+    justify-content: space-between;
+    
     
 }
+.sign-in-log-in{
+    display: flex;
+}
 
+#navbarSupportedContent{
 
-
+}
 
 .btn {
     background-color: #81C14B!important;
@@ -92,8 +100,8 @@ header{
     user-select: none;
 }
 .input-group{
-    margin-left: 100px;
-    width: 100%;
+    
+    width: 100%!important;
 }
 .input-group button{
     height: 29px;
@@ -129,17 +137,25 @@ header{
     font-weight: bold;
     
 }
+.nav-item-gundem{
+    display: none;
+}
+.middle-img{
+    display: none;
+}
 
 .gundem li{
-    margin: 0px 45px;
+    margin: 0;
     list-style-type: none;
     padding: 0 ;
     font-size: 14px;
+    width: 100%;
 }
 .gundem li a, .gundem a{
     text-decoration: none;
     color: #333;
     font-size: 14px;
+    width: 100%;
 }
 .gundem a:hover{
     color: #81C14B;
@@ -233,12 +249,15 @@ header{
     top: 180px;
     height: 100%;
     z-index: -1;
-    width: 245px;
+    width: 25%;
     color: #888888;
     overflow-y: scroll;
-    
+    padding-left: 20px;
     overflow-x: hidden;
-    width: 245px;
+    left: 0;
+   
+    
+    
     
 }
 .left-side::-webkit-scrollbar{
@@ -264,8 +283,12 @@ header{
         position: absolute;
         top:180px;
         z-index: -1;
-        left: 350px;
-        width: 75%;
+        left: 25%;
+        
+        width: 73%;
+        margin-right: 80px!important;
+        margin-left: 2%;
+        padding-right: 80px;
 
         
      
@@ -300,8 +323,9 @@ header{
 #gundem-visible.click{
     display:block;
 }
+
 .visible-link{
-    /* position: fixed; */
+    
     max-width: 300px;
     width: 245px;
     display: inline-block;
@@ -324,6 +348,15 @@ header{
     margin: 5px 5px;
     /* text-align: -webkit-match-parent; */
     
+}
+.topic-ss {
+    width: 100%;
+}
+.topic-ss .topic{
+    width: 75%;
+}
+.topic-ss .reklam-side{
+    width: 25%;
 }
 .topic-list li a{
     text-decoration: none;
@@ -592,50 +625,94 @@ option {
     height: 13px;
     margin: 6px 6px 0 0;
 }
-@media only screen and (max-width: 850px) { 
+@media only screen and (max-width: 900px) { 
     .left-side{
-    padding: 0 5px;
-    background-color: #fff;
-    border: 1px solid #b0bec5;
-    border-radius: 3px;
-    color: #333;
-    
-    z-index: 1000;
-    margin-top: -1px;
+       
+        margin: 0!important;
     display: none;
-    display: none;
-    
-    width: 90%;
-    max-width: 100%;
-    margin: 0;
-    left: 0;
+    width: 0;
+    height: 0;
+
     }
     .Right-side{
-        position: relative;
-        left: 0;
+       position: relative;
         width: 100%;
     max-width: 100%;
-    margin: 0;
+    margin-right: 0!important;
+    top: 15%;
+    left: 0;
+    padding: 0%;
     }
     .gundem li{
-        margin: 0 30px;
+        margin: 0 ;
         
     }
+    div.container-fluid.header-top{
+        margin: 0!important;
+    }
+    
+    .reklam-side{
+        display: none;
+    }
+    .topic-ss .topic{
+        
+        width: 100%!important;
+    }
+    
+    
+    .middle-img{
+        display:inline-flex;
+    }
+
+    .big-img{
+        display: none;
+    }
+    .nav-item-gundem{
+        display: inline;
+    }
+    .gundem-diez{
+        display: none;
+    }
+    .sign-in-log-in{
+        position: absolute;
+        display: none;
+        width: 0%;
+        height: 0;
+    }
+    /* #navbarSupportedContent{
+        justify-content: end;
+    }
+    nav {
+        justify-content:end ;
+        /* float: left!important; */
+    /* } */ */
+    .header-top{
+        justify-content: space-between;
+    }
+    .reklam-side{
+        /* display: none; */
+        position: absolute;
+        display: none;
+        width: 0%;
+        height: 0;
+    }
+    
+    }
+
     
     
        
     
-}
+
 @media only screen and (max-width: 1122px){
     div.container-fluid.header-top{
         margin: 0!important;
     }
-    div#navbarSupportedContent.collapse.navbar-collapse{
-        width: 25%!important;
-        margin: 0;
-    }
-    .reklam-side{
-        display: none;
+    
+    
+    
+    .topic{
+        width: 100%!important;
     }
     .left-side{
         margin: 0!important;
